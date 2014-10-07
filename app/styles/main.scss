@@ -11,7 +11,7 @@ body {
 .header {
   background-color: white;
   border-bottom: solid gray;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .etsy {
@@ -19,5 +19,23 @@ body {
 }
 
 .content {
+  width: 1500px;
+  height: 3000px;
   background-color: RGBA(245, 245, 241, 1);
+  padding-top: 60px;
+}
+
+.sidebar {
+  border: solid gray 1px;
+  border-radius: 2px;
+  width: 290px;
+  margin-left: 170px;
+  background-color: white;
+
+
+}
+
+.searchcriteria {
+  margin: 0;
+  padding: 0;
 }
