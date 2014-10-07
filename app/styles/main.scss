@@ -4,7 +4,7 @@
 
 // Custom Styles
 body {
-  width: 1500px;
+  width: 1950px;
 
 }
 
@@ -18,24 +18,74 @@ body {
   color: RGBA(209, 89, 40, 1);
 }
 
-.content {
-  width: 1500px;
-  height: 3000px;
-  background-color: RGBA(245, 245, 241, 1);
-  padding-top: 60px;
+/* Body of page */
+
+.container {
+  width: 1500px
+  list-style: none;
+  @include outer-container;
 }
 
-.sidebar {
-  border: solid gray 1px;
-  border-radius: 2px;
-  width: 290px;
-  margin-left: 170px;
-  background-color: white;
-
-
+.searchcrit {
+  @include span-columns(4);
 }
 
-.searchcriteria {
-  margin: 0;
-  padding: 0;
+.items {
+  @include span-columns(8);
 }
+
+.box {
+  @include span-columns(4 of 8);
+}
+li {
+  list-style: none;
+}
+
+.truncate {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* example
+
+In HTML:
+
+
+
+CSS:
+body {
+margin: 50px;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+}
+
+.heart, .hamburger {
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  display: none;
+}
+
+.heart {
+  right: 75px;
+}
+
+&.showButtons .heart, &.showButtons .hamburger {
+display: block;
+}
+
+In js:
+
+$('.box').hover(
+function () {
+  $(this).addClass('showButtons');
+}
+); */
