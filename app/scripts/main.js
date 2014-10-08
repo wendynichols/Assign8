@@ -20,7 +20,7 @@ etsyList.results.forEach(function(et) {
     });
 
 
-    var page = '<div class= "box">' + picture + title + shopname + currency + price + '</div>';
+    var page = '<ul class= "box">' + picture + title + shopname + currency + price + '</ul>';
     container.append(page);
 });
 
