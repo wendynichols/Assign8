@@ -1,4 +1,3 @@
-console.log('The Iron yard rocks')
 
 
  var container = $('#etsyList'),
@@ -7,7 +6,7 @@ console.log('The Iron yard rocks')
 etsyList.results.forEach(function(et) {
 
 
-    title = "<p class= 'truncate'>" + et.title + "</p>";
+    title = "<p class= 'ti'>" + et.title + "</p>";
 
     shopname = "<p class= 'sn'>" + et.Shop.shop_name + "</p>";
 
@@ -19,6 +18,7 @@ etsyList.results.forEach(function(et) {
       picture = '<img src="' + x.url_170x135 + '">';
     });
 
+    box = "<img class='box' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png' + "' />"+"<img class='box2' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png' + "' />";
 
     var page = '<li class= "everything">' + picture + title + shopname + currency + price + '</li>';
 
@@ -27,8 +27,6 @@ etsyList.results.forEach(function(et) {
 
 
     //Hover Buttons
-
-box = "<img class='box' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png' + "' />"+"<img class='box2' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png' + "' />";
 
 
 $('li').hover(
