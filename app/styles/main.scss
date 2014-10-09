@@ -20,17 +20,7 @@ body {
 
 /* Body of page */
 
-.container {
-  width: 1500px;
-  @include outer-container;
-}
 
-#etsyList {
-  li.block {
-  @include span-columns(3);
-  @include omega(3n);
-}
-}
 
 
 
