@@ -20,10 +20,22 @@ etsyList.results.forEach(function(et) {
     });
 
 
-    var page = '<ul class= "box">' + picture + title + shopname + currency + price + '</ul>';
+    var page = '<li class= "everything">' + picture + title + shopname + currency + price + '</li>';
+
     container.append(page);
 });
 
+
+    //Hover Buttons
+
+box = "<img class='box' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png' + "' />"+"<img class='box2' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png' + "' />";
+
+
+$('li').hover(
+  function(){
+    $(this).toggleClass('showButtons');
+  }
+);
 
 
 
